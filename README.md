@@ -50,21 +50,25 @@ St. Louis shows the strongest predictive signal: when lights increase, GDP follo
 
 #Project Structure
 
-black-marble-quant/
-├── correlationtests/
-│ ├── 19-21covidquarterlydatatest.py # graph creating for quarterly BEA and Black Marble data
-│ ├── 13-19yearlydattest.py # taking in yearly data from different metros and Black Marble for comparisons
-├── data/ # Not fully included in repo (download separately)
-│ ├── raw/
-| | |──quarterdata/
-| | | |──missouriquarterlygdp19-21SQGDP2.csv
-| | | ...(includes tennesse, oklahoma, texas, and missouri
-│ |── processed/
-| | |──# Processed CSVs
-├── images/ # Generated visualizations
-│ ├── quarterly_lights_vs_gdp.png
-│ └── yearly_lights_vs_gdp.png
-└── README.md
+## Files
+
+**correlationtests/**
+- `19-21covidquarterlydatatest.py` - Quarterly analysis (2019-2021)
+- `13-19yearlydattest.py` - Yearly analysis (2013-2019)
+
+**data/raw/quarterdata/**
+- `missouriquarterlygdp19-21SQGDP2.csv`
+- `tennesseequarterlygdp19-21SQGDP2.csv`
+- `oklahomaquarterlygdp19-21SQGDP2.csv`
+- `texasquarterlygdp19-21SQGDP2.csv`
+
+**images/**
+- `quarterly_lights_vs_gdp.png`
+- `yearly_lights_vs_gdp.png`
+
+#data sources
+BEA
+NASA BLACK MARBLE
 
 #data
 To download the black marble data that I used, go to the EARTHDATA website, or paste this link: https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4
